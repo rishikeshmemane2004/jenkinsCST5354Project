@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CST5354Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CST5354Test#1(failed)">
+    <classes>
+      <class name="day7Jun23.TestNgDemo1">
+        <methods>
+          <include name="verifyUrl"/>
+        </methods>
+      </class> <!-- day7Jun23.TestNgDemo1 -->
+    </classes>
+  </test> <!-- CST5354Test#1(failed) -->
+  <test thread-count="5" name="CST5354Test#2(failed)">
+    <classes>
+      <class name="day7Jun23.TestNgDemo2">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- day7Jun23.TestNgDemo2 -->
+    </classes>
+  </test> <!-- CST5354Test#2(failed) -->
+</suite> <!-- Failed suite [CST5354Suite] -->

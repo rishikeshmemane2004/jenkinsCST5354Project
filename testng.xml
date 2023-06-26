@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupsSuite">
+	<listeners>
+		<listener class-name="day17Jun23.MyListener" />
+	</listeners>
+	
+	<parameter name="browser" value="edge"></parameter>
+	<parameter name="env" value="QAServer"></parameter>
+	<parameter name="responseCodes" value="200,201,202"></parameter>
+	<test thread-count="5" name="GroupsTest">
+		<groups>
+			<define name="allVehicles">
+				<include name="bikes"></include>
+				<include name="cars"></include>
+			</define>
+			<define name="carsName">
+				<include name="cars"></include>
+			</define>
+			<define name="bikeName">
+				<include name="bikes"></include>
+			</define>
+			<run>
+				<!--include name="carsName"></include-->
+				<!--include name="bikeName"> </include-->
+				<include name="allVehicles"></include>
+				<!--exclude name="bikeName"> </exclude-->
+			</run>
+		</groups>
+		<classes>
+			<class name="day17Jun23.GroupsDemo" />
+		</classes>
+	</test> <!-- GroupsTest -->
+</suite> <!-- GroupsSuite -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ActorSuite">
+  <test thread-count="5" name="ActorTest">
+    <classes>
+      <class name="day11Jun23.PaymentDemo"/>
+      <class name="day11Jun23.ShippingDemo"/>
+    </classes>
+  </test> <!-- ActorTest -->
+</suite> <!-- ActorSuite -->

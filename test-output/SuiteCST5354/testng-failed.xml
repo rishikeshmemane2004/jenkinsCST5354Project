@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteCST5354]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="TestCST5354(failed)">
+    <classes>
+      <class name="day21Jun23.GoogleTest">
+        <methods>
+          <include name="GTest"/>
+        </methods>
+      </class> <!-- day21Jun23.GoogleTest -->
+      <class name="day21Jun23.AmazonTest">
+        <methods>
+          <include name="AMTest"/>
+        </methods>
+      </class> <!-- day21Jun23.AmazonTest -->
+    </classes>
+  </test> <!-- TestCST5354(failed) -->
+</suite> <!-- Failed suite [SuiteCST5354] -->
